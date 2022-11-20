@@ -16,7 +16,7 @@ def main() -> None:
     folder = filter_folder(os.listdir(FOLDER_PATH))
     # number of images in folder
     image_name = random.choice(folder)
-    image_path = FOLDER_PATH + "/" + image_name if (image_name.split(".")[-1] in VALID_IMAGE) else None
+    image_path = FOLDER_PATH + "/" + image_name
     # open image
     try:
         image = Image.open(image_path)
