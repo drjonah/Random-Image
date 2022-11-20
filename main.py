@@ -21,9 +21,9 @@ def main() -> None:
     try:
         image = Image.open(image_path)
         image.show()
-        print(f"OPENED:\n{image_name}\n{image_path}")
+        print(f"OPENED:\nName:{image_name}\nPath:{image_path}")
     except:
-        print(f"ERROR:\n{image_name}\n{image_path}")
+        print(f"ERROR:\nName:{image_name}\nPath:{image_path}")
 
 if __name__ == "__main__":
     main()
